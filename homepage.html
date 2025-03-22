@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gian Rolan B. Salas - Profile</title>
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: Arial, sans-serif; /* Use a more professional font */
+            margin: 0; /* Reset default margins */
+            padding: 20px; /* Consistent padding */
+            background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+            color: #333; /* Darker, more readable text */
+        }
+
+        /* Profile Section Styles */
+        .profile {
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Center items vertically */
+            margin-bottom: 30px; /* Spacing below profile */
+        }
+
+        .profile img {
+            width: 150px; /* Slightly smaller, consistent size */
+            height: 150px;
+            border-radius: 50%; /* Circular image */
+            object-fit: cover; /* Ensure image fills the circle */
+            margin-right: 20px; /* Spacing between image and text */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .profile p {
+            font-size: 1.1em; /* Slightly larger, readable text */
+            line-height: 1.6; /* Improved line spacing */
+        }
+
+        /* Section Heading Styles */
+        h2 {
+            font-size: 1.5em; /* Larger heading */
+            color: #555; /* Slightly muted heading color */
+            margin-bottom: 10px; /* Spacing below heading */
+            border-bottom: 2px solid #ddd; /* Underline heading */
+            padding-bottom: 5px; /* Spacing between text and underline */
+        }
+
+        /* List Styles */
+        ul {
+            list-style: square; /* Use square bullet points */
+            padding-left: 20px; /* Indentation */
+        }
+
+        li {
+            font-size: 1.1em; /* Consistent list item size */
+            margin-bottom: 5px; /* Spacing between list items */
+        }
+
+        /* Contact Section Styles */
+        .contact a {
+            color: #007bff; /* Standard link color */
+            text-decoration: none; /* No underline by default */
+        }
+
+        .contact a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        .contact p {
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+    </style>
+    <script type="module" src="./homepage.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Gian Rolan B. Salas - Profile</h1>
+    </header>
+
+    <main>
+        <section class="profile">
+            <img src="Gian.jpg" alt="Gian Rolan B. Salas">
+            <p>I am Gian Rolan B. Salas, and I am 18 years old. I reside in Consolacion, Cebu.</p>
+        </section>
+
+        <section class="interests">
+            <h2>Interests</h2>
+            <ul>
+                <li>Reading</li>
+                <li>Listening to Music</li>
+                <li>Games</li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2>Contact</h2>
+            <p><a href="mailto:Giansalas58@gmail.com">Giansalas58@gmail.com</a></p>
+            <p>Phone: 09062402256</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gian Rolan B. Salas</p>
+    </footer>
+</body>
+
+</html>
+    <script>
+        function showContent(pageId) {
+            // Hide all content divs (assuming they have class "content")
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => {
+                content.style.display = 'none'; //or content.classList.add('hidden') if you have a hidden class
+            });
+    
+            // Show the selected content div
+            const selectedContent = document.getElementById(pageId);
+            if (selectedContent) {
+                selectedContent.style.display = 'block'; //or selectedContent.classList.remove('hidden')
+            }
+        }
+    
+        // Initialize to show the home page on load (if you have a home page)
+        document.addEventListener('DOMContentLoaded', function() {
+          showContent('home');
+        });
+    
+    </script>
+</body>
+</html>
